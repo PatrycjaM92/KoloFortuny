@@ -1,0 +1,137 @@
+\doxysection{Gracz Class Reference}
+\label{class_gracz}\index{Gracz@{Gracz}}
+Inheritance diagram for Gracz\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_gracz}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Gracz} ()
+\item 
+int \textbf{ get\+Aktualny\+Wynik} ()
+\item 
+String \textbf{ get\+Imie} ()
+\item 
+int \textbf{ get\+Calkowity\+Wynik} ()
+\item 
+void \textbf{ set\+Imie} (String imie)
+\item 
+void \textbf{ set\+Aktualny\+Wynik} (int Aktualny\+Wynik)
+\item 
+void \textbf{ set\+Calkowity\+Wynik} (int Calkowity\+Wynik)
+\item 
+void \textbf{ pokaz\+Wyniki} ()
+\item 
+boolean \textbf{ zgaduje} (\textbf{ Zagadnienia} zagad)
+\item 
+void \textbf{ czy\+Odgadnac\+Haslo} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa, ktorej instancja sa obiekty, bedace graczami. Rozszerza Klase \doxyref{Kolo}{p.}{class_kolo} w celu umozliwienia losowania przez danego Gracza kwoty na kole z Metody losujacej z Klasy \doxyref{Kolo}{p.}{class_kolo} 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_gracz_a515eb3cc0b9d87b50e0de8870dbb9925}} 
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\index{Gracz@{Gracz}!Gracz@{Gracz}}
+\doxysubsubsection{Gracz()}
+{\footnotesize\ttfamily Gracz.\+Gracz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Konstruktor ustawiajacy wyniki na wartosc 0 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_gracz_a84731b321c29901c3459a0fdd6f79590}} 
+\index{Gracz@{Gracz}!czyOdgadnacHaslo@{czyOdgadnacHaslo}}
+\index{czyOdgadnacHaslo@{czyOdgadnacHaslo}!Gracz@{Gracz}}
+\doxysubsubsection{czyOdgadnacHaslo()}
+{\footnotesize\ttfamily void Gracz.\+czy\+Odgadnac\+Haslo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zapytujaca gracza o probe odgadniecia hasla. Zmienia wartosc pola statycznego Czy\+Zgaduje w zaleznosci, czy gracz chce odgadnac haslo, czy tez nie. \mbox{\label{class_gracz_a435a026c550095318506c7854071a09d}} 
+\index{Gracz@{Gracz}!getAktualnyWynik@{getAktualnyWynik}}
+\index{getAktualnyWynik@{getAktualnyWynik}!Gracz@{Gracz}}
+\doxysubsubsection{getAktualnyWynik()}
+{\footnotesize\ttfamily int Gracz.\+get\+Aktualny\+Wynik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracajaca wynik aktualny w danej rundzie \begin{DoxyReturn}{Returns}
+zwraca wynik aktualny w danej rundzie 
+\end{DoxyReturn}
+\mbox{\label{class_gracz_a7e1f9173258c1ef99fdaf522fc0508e6}} 
+\index{Gracz@{Gracz}!getCalkowityWynik@{getCalkowityWynik}}
+\index{getCalkowityWynik@{getCalkowityWynik}!Gracz@{Gracz}}
+\doxysubsubsection{getCalkowityWynik()}
+{\footnotesize\ttfamily int Gracz.\+get\+Calkowity\+Wynik (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda zwracajaca wynik po zakonczonych rundach. \begin{DoxyReturn}{Returns}
+zwraca wynik, jesli gracz wygral dana runde 
+\end{DoxyReturn}
+\mbox{\label{class_gracz_a2f1328cd7437337caf4fdbca67442f8c}} 
+\index{Gracz@{Gracz}!getImie@{getImie}}
+\index{getImie@{getImie}!Gracz@{Gracz}}
+\doxysubsubsection{getImie()}
+{\footnotesize\ttfamily String Gracz.\+get\+Imie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda udostepniajaca imie gracza \begin{DoxyReturn}{Returns}
+zwraca imie Gracza 
+\end{DoxyReturn}
+\mbox{\label{class_gracz_a60899e62813e6c644ded7db237c671c3}} 
+\index{Gracz@{Gracz}!pokazWyniki@{pokazWyniki}}
+\index{pokazWyniki@{pokazWyniki}!Gracz@{Gracz}}
+\doxysubsubsection{pokazWyniki()}
+{\footnotesize\ttfamily void Gracz.\+pokaz\+Wyniki (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Metoda pokazujaca stan wynikow. \mbox{\label{class_gracz_a51647ae3362081397685a027ac7c323f}} 
+\index{Gracz@{Gracz}!setAktualnyWynik@{setAktualnyWynik}}
+\index{setAktualnyWynik@{setAktualnyWynik}!Gracz@{Gracz}}
+\doxysubsubsection{setAktualnyWynik()}
+{\footnotesize\ttfamily void Gracz.\+set\+Aktualny\+Wynik (\begin{DoxyParamCaption}\item[{int}]{Aktualny\+Wynik }\end{DoxyParamCaption})}
+
+Metoda Ustanawiajaca wynik, jesli gracz wylosuje kwote rozna od 0 i prawidlowo wytypuje litere. 
+\begin{DoxyParams}{Parameters}
+{\em Aktualny\+Wynik} & parametrem jest pole danych aktualny wynik, w ktorym zapisane sa kwoty w danym momencie w danej rundzie \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_gracz_a81ec587071d2751441e339e0c86b9558}} 
+\index{Gracz@{Gracz}!setCalkowityWynik@{setCalkowityWynik}}
+\index{setCalkowityWynik@{setCalkowityWynik}!Gracz@{Gracz}}
+\doxysubsubsection{setCalkowityWynik()}
+{\footnotesize\ttfamily void Gracz.\+set\+Calkowity\+Wynik (\begin{DoxyParamCaption}\item[{int}]{Calkowity\+Wynik }\end{DoxyParamCaption})}
+
+Metoda ustanawiajaca wynik w przypadku, gdy gracz prawidlowo odgadnie haslo. 
+\begin{DoxyParams}{Parameters}
+{\em Calkowity\+Wynik} & Parametrem jest pole danych, ktore przechowuje wynik zebrany po wszystkich wygranych rundach \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_gracz_a2fbfd323b0d06f143414715466515f7d}} 
+\index{Gracz@{Gracz}!setImie@{setImie}}
+\index{setImie@{setImie}!Gracz@{Gracz}}
+\doxysubsubsection{setImie()}
+{\footnotesize\ttfamily void Gracz.\+set\+Imie (\begin{DoxyParamCaption}\item[{String}]{imie }\end{DoxyParamCaption})}
+
+Metoda ustanawiajaca imie gracza 
+\begin{DoxyParams}{Parameters}
+{\em imie} & Imie wpisane przez gracza do zmiennej String \\
+\hline
+\end{DoxyParams}
+\mbox{\label{class_gracz_a695629f6d2a53950bb13407dc48351c0}} 
+\index{Gracz@{Gracz}!zgaduje@{zgaduje}}
+\index{zgaduje@{zgaduje}!Gracz@{Gracz}}
+\doxysubsubsection{zgaduje()}
+{\footnotesize\ttfamily boolean Gracz.\+zgaduje (\begin{DoxyParamCaption}\item[{\textbf{ Zagadnienia}}]{zagad }\end{DoxyParamCaption})}
+
+Metoda zwracajaca \textquotesingle{}true\textquotesingle{} lub \textquotesingle{}false\textquotesingle{} w zaleznosci czy gracz prawidlowo odgadnal haslo. 
+\begin{DoxyParams}{Parameters}
+{\em zagad} & obiekt, ktory jest wylosowana kategoria wraz z haslem \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Prawda -\/ jesli gracz prawidlowo odgadnal haslo oraz Falsz -\/ jesli haslo wytypowane przez gracza jest inne niz wylosowane 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ Gracz.\+java}\end{DoxyCompactItemize}
